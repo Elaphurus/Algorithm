@@ -1,5 +1,5 @@
 /*
-problem about date
+date
 
 the difference between two date
 input1:

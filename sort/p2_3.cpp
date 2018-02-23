@@ -20,9 +20,11 @@ bool cmp(int x, int y) {
 }
 int main() {
 	int n;
+	int i;
 	int buf[100];
+
 	while(scanf("%d", &n) != EOF) {
-		for(int i = 0; i < n; i++) {
+		for(i = 0; i < n; i++) {
 			scanf("%d", &buf[i]);
 		}
 		sort(buf, buf + n, cmp); //overload c++ sort function(quicksort)

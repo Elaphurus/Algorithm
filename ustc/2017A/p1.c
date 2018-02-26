@@ -20,9 +20,9 @@ int main()
 	len = 0;
 	while (!feof(fp)) {
 		ch = fgetc(fp);
-		// 忽略字母和空格以外的字符
 		if (ch >= 97 && ch <= 122 || ch >= 65 && ch <= 90 || ch == ' ') {
 		} else {
+			// 忽略字母和空格以外的字符
 			continue;
 		}
 		if (ch != ' ') {
@@ -39,8 +39,8 @@ int main()
 		}
 		lastCh = ch;
 	}
-	// 删除最后一个单词后的空格
 	if (output[len - 1] == ' ') {
+		// 删除最后一个单词后的空格
 		output[len - 1] = '\0';
 		len--;
 	}
